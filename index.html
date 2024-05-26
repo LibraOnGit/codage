@@ -8,16 +8,21 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#stages">Stages</a></li>
-                <li><a href="#rapports">Rapports</a></li>
-                <li><a href="#entreprises">Entreprises</a></li>
-                <li><a href="#soumission">Soumission</a></li>
-                <li><a href="#connexion">Connexion</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#stages">Stages</a></li>
+                    <li><a href="#rapports">Rapports</a></li>
+                    <li><a href="#entreprises">Entreprises</a></li>
+                    <li><a href="#soumission">Soumission</a></li>
+                    <li><a href="#connexion">Connexion</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -28,75 +33,89 @@
             </ul>
         </nav>
 
-        <section id="accueil">
-            <h1>Bienvenue sur le site de Recensement des Stages et Rapports</h1>
-            <p>Accédez rapidement aux informations sur les stages, rapports des anciens élèves et entreprises partenaires.</p>
-        </section>
-
-        <section id="stages">
-            <h2>Stages</h2>
-            <div class="search-bar">
-                <input type="text" id="search-stages" placeholder="Rechercher des stages...">
-            </div>
-            <div id="stages-list">
-                <!-- Liste des stages -->
+        <section id="accueil" class="hero">
+            <div class="container">
+                <h1>Bienvenue sur le site de Recensement des Stages et Rapports</h1>
+                <p>Accédez rapidement aux informations sur les stages, rapports des anciens élèves et entreprises partenaires.</p>
             </div>
         </section>
 
-        <section id="rapports">
-            <h2>Rapports</h2>
-            <div class="search-bar">
-                <input type="text" id="search-rapports" placeholder="Rechercher des rapports...">
-            </div>
-            <div id="rapports-list">
-                <!-- Liste des rapports -->
-            </div>
-        </section>
-
-        <section id="entreprises">
-            <h2>Entreprises</h2>
-            <div class="search-bar">
-                <input type="text" id="search-entreprises" placeholder="Rechercher des entreprises...">
-            </div>
-            <div id="entreprises-list">
-                <!-- Liste des entreprises -->
+        <section id="stages" class="content-section">
+            <div class="container">
+                <h2>Stages</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-stages" placeholder="Rechercher des stages...">
+                </div>
+                <div id="stages-list">
+                    <!-- Liste des stages -->
+                </div>
             </div>
         </section>
 
-        <section id="soumission">
-            <h2>Soumettre un Stage ou un Rapport</h2>
-            <form id="submission-form">
-                <label for="type">Type:</label>
-                <select id="type" name="type">
-                    <option value="stage">Stage</option>
-                    <option value="rapport">Rapport</option>
-                </select>
-                <label for="title">Titre:</label>
-                <input type="text" id="title" name="title" required>
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-                <label for="company">Entreprise:</label>
-                <input type="text" id="company" name="company">
-                <label for="contact">Contact:</label>
-                <input type="email" id="contact" name="contact" required>
-                <button type="submit">Soumettre</button>
-            </form>
+        <section id="rapports" class="content-section">
+            <div class="container">
+                <h2>Rapports</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-rapports" placeholder="Rechercher des rapports...">
+                </div>
+                <div id="rapports-list">
+                    <!-- Liste des rapports -->
+                </div>
+            </div>
         </section>
 
-        <section id="connexion">
-            <h2>Connexion</h2>
-            <form id="login-form">
-                <label for="username">Nom d'utilisateur:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Mot de passe:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Se connecter</button>
-            </form>
+        <section id="entreprises" class="content-section">
+            <div class="container">
+                <h2>Entreprises</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-entreprises" placeholder="Rechercher des entreprises...">
+                </div>
+                <div id="entreprises-list">
+                    <!-- Liste des entreprises -->
+                </div>
+            </div>
+        </section>
+
+        <section id="soumission" class="content-section">
+            <div class="container">
+                <h2>Soumettre un Stage ou un Rapport</h2>
+                <form id="submission-form">
+                    <label for="type">Type:</label>
+                    <select id="type" name="type">
+                        <option value="stage">Stage</option>
+                        <option value="rapport">Rapport</option>
+                    </select>
+                    <label for="title">Titre:</label>
+                    <input type="text" id="title" name="title" required>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                    <label for="company">Entreprise:</label>
+                    <input type="text" id="company" name="company">
+                    <label for="contact">Contact:</label>
+                    <input type="email" id="contact" name="contact" required>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="connexion" class="content-section">
+            <div class="container">
+                <h2>Connexion</h2>
+                <form id="login-form">
+                    <label for="username">Nom d'utilisateur:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Recensement des Stages et Rapports</p>
+        <div class="container">
+            <p>&copy; 2024 Recensement des Stages et Rapports</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
