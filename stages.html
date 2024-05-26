@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Recensement des Stages et Rapports</title>
+    <title>Stages - Recensement des Stages et Rapports</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,14 +29,20 @@
         <nav id="breadcrumb">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><span id="breadcrumb-current">Accueil</span></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><span id="breadcrumb-current">Stages</span></li>
             </ul>
         </nav>
 
-        <section id="accueil" class="hero">
+        <section id="stages" class="content-section">
             <div class="container">
-                <h1>Bienvenue sur le site de Recensement des Stages et Rapports</h1>
-                <p>Accédez rapidement aux informations sur les stages, rapports des anciens élèves et entreprises partenaires.</p>
+                <h2>Stages</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-stages" placeholder="Rechercher des stages...">
+                </div>
+                <div id="stages-list">
+                    <!-- Liste des stages -->
+                </div>
             </div>
         </section>
     </main>

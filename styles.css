@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
